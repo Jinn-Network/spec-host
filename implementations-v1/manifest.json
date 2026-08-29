@@ -2,14 +2,14 @@
   "version": 1,
   "generatedFrom": {
     "repository": "Jinn-Network/mono",
-    "commit": "9e8a1ac7bdba1ac5c87cea9f0d54c7eddeda1591"
+    "commit": "275b4bb8474927b8aeaa9dcf44dffeadae49dbb3"
   },
   "catalog": {
     "path": "architecture/platform-packages.v1.json",
     "sha256": "9b48ed3f896777e085ed5f560fad7fe24eea98022a8e8ffbe4b1ce8a2286b91e"
   },
   "releaseGroup": "implementations-v1",
-  "lane": "stable",
+  "lane": "canary",
   "packages": [
     "@jinn-network/benchmarking-aggregate",
     "@jinn-network/benchmarking-evaluation",
@@ -1472,14 +1472,32 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-trust"
     },
     {
+      "path": "facts/authorization/v2",
+      "sha256": "c85dc58b3dcccc604947233b437dad3f254889371d872f7c4af5719d4fdfa891",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-trust"
+    },
+    {
       "path": "facts/benchmark-accounting/v1",
       "sha256": "d2590f8dcef75f7adcef88438775a0629c33e4d87147904bd2d50f7282f19410",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
     },
     {
+      "path": "facts/benchmark-accounting/v2",
+      "sha256": "dcf1ff7231e424127f891ab602a8cbdc19efd71e586c51a9c31520f7e76bc99d",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
+    },
+    {
       "path": "facts/benchmark-matrix/v1",
       "sha256": "fba4827c5dc848b4a9738ca8bbff2a77323a24b243bd2137db90df319c3b510d",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
+    },
+    {
+      "path": "facts/benchmark-matrix/v2",
+      "sha256": "4869088e8b190138a108b6aade68501027bf67fe7559d4d4ab1eff6477219290",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
     },
@@ -1502,14 +1520,32 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
     },
     {
+      "path": "facts/benchmark-run/v2",
+      "sha256": "f93e08f1f6391810f04b0a4f4963bc6bc329cca8969a1494538541f4ef0ec2f5",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
+    },
+    {
       "path": "facts/benchmark/v1",
       "sha256": "78400a6a7396acf4bc852176abb8f6c325750dfe3d7d2e256df760363f752e48",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
     },
     {
+      "path": "facts/benchmark/v2",
+      "sha256": "38aebc236260826afb2356997c5db6d1bf04e6a39f43ee23c68d56d821b563f1",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-benchmarking"
+    },
+    {
       "path": "facts/chain-environment/v1",
       "sha256": "f6f519df00127d64c1c3c1f3e31bb88f1b1e7b25e125b3dc64dc02aabae3b16d",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
+    },
+    {
+      "path": "facts/chain-environment/v2",
+      "sha256": "54bfc4bf1768c217f31860e297d1b88c0ec480a6a608aef18633055c436d149a",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
     },
@@ -1526,8 +1562,20 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
     },
     {
+      "path": "facts/crypto-environment/v2",
+      "sha256": "d2a81e3f8f44faccfc2e52f902e7a812f9b61952e52c28a84cbb49b39a206d60",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
+    },
+    {
       "path": "facts/delivery/v1",
       "sha256": "fc4c2bfab14c32cdc262149d83e414af59cad579b4368faf080e4f87281dfcd3",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
+    },
+    {
+      "path": "facts/delivery/v2",
+      "sha256": "aaa3f007783b9c2b5f1f9a5b02647387a6fdef58467f7a6d4d74db6d818feeff",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
     },
@@ -1538,8 +1586,20 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-environments"
     },
     {
+      "path": "facts/environment/v2",
+      "sha256": "9e0666452870ce9d6023d117a4102f56ffd775632c6d3657ff91489221e794ed",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-environments"
+    },
+    {
       "path": "facts/evaluation-spec/v1",
       "sha256": "7d337da32e91a933cb94d63e7034f8c074696f26ad5f2bafb93ea07de3186a52",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
+    },
+    {
+      "path": "facts/evaluation-spec/v2",
+      "sha256": "ca7076f0d0757e6c4dcd6abc926ca48dcce66fc6ab86f9270160d0ca578b1bc4",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
     },
@@ -1556,8 +1616,20 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
     },
     {
+      "path": "facts/execution-evidence/v3",
+      "sha256": "5a75017c4013a57a49bddd5ee7efc7b665cda5a856abb0b738ccf585d7e0b38a",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
+    },
+    {
       "path": "facts/execution-verification/v1",
       "sha256": "a3295d64a388ab9e0febdcb730c6eba1ff4e3774e95ec58e6017e5456111fbca",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
+    },
+    {
+      "path": "facts/execution-verification/v2",
+      "sha256": "b223d291dfd2caa829db2d2abfa563583bed2061a2f7b0376f7bd9bc3d29bade",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
     },
@@ -1568,8 +1640,20 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
     },
     {
+      "path": "facts/information-world/v2",
+      "sha256": "cfb5d6c6a5a22066ed34ccc3e461fe45995520323976bd08b45fa969b3f3e967",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-chain-environments"
+    },
+    {
       "path": "facts/key-binding/v1",
       "sha256": "7838af4a18519494c3f9945fbb37595c2efbc6b37ebb9848476cde1e6a2143a9",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-trust"
+    },
+    {
+      "path": "facts/key-binding/v2",
+      "sha256": "9ba4081b927b111c125ef360c522ad7094f887b34e742ecd6492d14e6cba8de5",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-trust"
     },
@@ -1586,6 +1670,12 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
     },
     {
+      "path": "facts/profile-document/v2",
+      "sha256": "88f0a783e474bdeda97b0a2ddfa5c5eae8d3958c27b29c4efe7f004eeac87f36",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
+    },
+    {
       "path": "facts/result-evaluation/v1",
       "sha256": "77e7dffc3c2857925f71be3b2ebc082ded3b8fc984ed4f716605925072d43083",
       "mediaType": "application/json",
@@ -1598,6 +1688,12 @@
       "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
     },
     {
+      "path": "facts/result-evaluation/v3",
+      "sha256": "4aed2117653350ef3e05e0f86bd3e3d821a2ea9d9ffb51c430f2ebea56cbf74a",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-evidence"
+    },
+    {
       "path": "facts/submission/v1",
       "sha256": "cddd992c39a847d5f0434b4054b357bedb236b453513a89cd3798dfc6b2d89c8",
       "mediaType": "application/json",
@@ -1606,6 +1702,12 @@
     {
       "path": "facts/task/v1",
       "sha256": "3cdc53ad149e5f6f5f24eda2ea0cc9c59a85890920450f71687eda9bbf073ede",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
+    },
+    {
+      "path": "facts/task/v2",
+      "sha256": "17fcb7f55daef5c331d5c43e893e84a9deeaa2515da62c73d9d6505b98cafc29",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/record-discovery-facts-task-execution"
     },

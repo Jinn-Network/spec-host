@@ -4,7 +4,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/sealed-platform-v1/manifest.json",
+      "source": "/implementations-v1/manifest.dsse.json",
       "headers": [
         {
           "key": "Content-Type",
@@ -12,7 +12,7 @@
         },
         {
           "key": "ETag",
-          "value": "\"sha256-bd2450748f56e3814fbd2e1e905a108f7d40b98cba9d28075d9594ad36b1d2dd\""
+          "value": "\"sha256-1f62e8ed587d705a0c04e452b2f45f0e2c0c2da851a1d3310f94495e42b2e4fa\""
         },
         {
           "key": "Cache-Control",
@@ -29,7 +29,41 @@
         },
         {
           "key": "ETag",
-          "value": "\"sha256-2243951d9d462b862cef3736f77af544bbb1d16dda18c9d373c3add6a598add1\""
+          "value": "\"sha256-3a649204b527eab5d7257e1c1305f1025188ea00fff71f6350f6c819d309fd09\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sealed-platform-v1/manifest.dsse.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-aae6a1a653059d5a8ce185a745505675a6b720b6cd601d7c6c46f550f057541e\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sealed-platform-v1/manifest.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-467d6fea8ba540c7fa7448b669bcad50077252241d85cf8fb17ee99689b18c0c\""
         },
         {
           "key": "Cache-Control",
@@ -11683,6 +11717,23 @@
       ]
     },
     {
+      "source": "/facts/authorization/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-c85dc58b3dcccc604947233b437dad3f254889371d872f7c4af5719d4fdfa891\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/benchmark-accounting/v1",
       "headers": [
         {
@@ -11700,6 +11751,23 @@
       ]
     },
     {
+      "source": "/facts/benchmark-accounting/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-dcf1ff7231e424127f891ab602a8cbdc19efd71e586c51a9c31520f7e76bc99d\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/benchmark-matrix/v1",
       "headers": [
         {
@@ -11709,6 +11777,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-fba4827c5dc848b4a9738ca8bbff2a77323a24b243bd2137db90df319c3b510d\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/benchmark-matrix/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-4869088e8b190138a108b6aade68501027bf67fe7559d4d4ab1eff6477219290\""
         },
         {
           "key": "Cache-Control",
@@ -11768,6 +11853,23 @@
       ]
     },
     {
+      "source": "/facts/benchmark-run/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-f93e08f1f6391810f04b0a4f4963bc6bc329cca8969a1494538541f4ef0ec2f5\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/benchmark/v1",
       "headers": [
         {
@@ -11785,6 +11887,23 @@
       ]
     },
     {
+      "source": "/facts/benchmark/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-38aebc236260826afb2356997c5db6d1bf04e6a39f43ee23c68d56d821b563f1\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/chain-environment/v1",
       "headers": [
         {
@@ -11794,6 +11913,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-f6f519df00127d64c1c3c1f3e31bb88f1b1e7b25e125b3dc64dc02aabae3b16d\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/chain-environment/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-54bfc4bf1768c217f31860e297d1b88c0ec480a6a608aef18633055c436d149a\""
         },
         {
           "key": "Cache-Control",
@@ -11836,6 +11972,23 @@
       ]
     },
     {
+      "source": "/facts/crypto-environment/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-d2a81e3f8f44faccfc2e52f902e7a812f9b61952e52c28a84cbb49b39a206d60\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/delivery/v1",
       "headers": [
         {
@@ -11845,6 +11998,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-fc4c2bfab14c32cdc262149d83e414af59cad579b4368faf080e4f87281dfcd3\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/delivery/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-aaa3f007783b9c2b5f1f9a5b02647387a6fdef58467f7a6d4d74db6d818feeff\""
         },
         {
           "key": "Cache-Control",
@@ -11870,6 +12040,23 @@
       ]
     },
     {
+      "source": "/facts/environment/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-9e0666452870ce9d6023d117a4102f56ffd775632c6d3657ff91489221e794ed\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/evaluation-spec/v1",
       "headers": [
         {
@@ -11879,6 +12066,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-7d337da32e91a933cb94d63e7034f8c074696f26ad5f2bafb93ea07de3186a52\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/evaluation-spec/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-ca7076f0d0757e6c4dcd6abc926ca48dcce66fc6ab86f9270160d0ca578b1bc4\""
         },
         {
           "key": "Cache-Control",
@@ -11921,6 +12125,23 @@
       ]
     },
     {
+      "source": "/facts/execution-evidence/v3",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-5a75017c4013a57a49bddd5ee7efc7b665cda5a856abb0b738ccf585d7e0b38a\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/execution-verification/v1",
       "headers": [
         {
@@ -11930,6 +12151,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-a3295d64a388ab9e0febdcb730c6eba1ff4e3774e95ec58e6017e5456111fbca\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/execution-verification/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-b223d291dfd2caa829db2d2abfa563583bed2061a2f7b0376f7bd9bc3d29bade\""
         },
         {
           "key": "Cache-Control",
@@ -11955,6 +12193,23 @@
       ]
     },
     {
+      "source": "/facts/information-world/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-cfb5d6c6a5a22066ed34ccc3e461fe45995520323976bd08b45fa969b3f3e967\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/key-binding/v1",
       "headers": [
         {
@@ -11964,6 +12219,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-7838af4a18519494c3f9945fbb37595c2efbc6b37ebb9848476cde1e6a2143a9\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/key-binding/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-9ba4081b927b111c125ef360c522ad7094f887b34e742ecd6492d14e6cba8de5\""
         },
         {
           "key": "Cache-Control",
@@ -12006,6 +12278,23 @@
       ]
     },
     {
+      "source": "/facts/profile-document/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-88f0a783e474bdeda97b0a2ddfa5c5eae8d3958c27b29c4efe7f004eeac87f36\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/result-evaluation/v1",
       "headers": [
         {
@@ -12040,6 +12329,23 @@
       ]
     },
     {
+      "source": "/facts/result-evaluation/v3",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-4aed2117653350ef3e05e0f86bd3e3d821a2ea9d9ffb51c430f2ebea56cbf74a\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/facts/submission/v1",
       "headers": [
         {
@@ -12066,6 +12372,23 @@
         {
           "key": "ETag",
           "value": "\"sha256-3cdc53ad149e5f6f5f24eda2ea0cc9c59a85890920450f71687eda9bbf073ede\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/facts/task/v2",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "ETag",
+          "value": "\"sha256-17fcb7f55daef5c331d5c43e893e84a9deeaa2515da62c73d9d6505b98cafc29\""
         },
         {
           "key": "Cache-Control",
@@ -12558,7 +12881,7 @@
         },
         {
           "key": "ETag",
-          "value": "\"sha256-c0ace1561854799afe85e6fc6f1588f1fd0b1a5f3c019c8f457b4238d474fe49\""
+          "value": "\"sha256-ec4eb17d94b2bfa2aa7d65b2913b3ded3760e948c2ee12a221540f91a954a20c\""
         },
         {
           "key": "Cache-Control",
@@ -12575,7 +12898,7 @@
         },
         {
           "key": "ETag",
-          "value": "\"sha256-edd241b5a6d1188a68a5a10fe97611f1c2fb2433523010a154c055f39b2c8c21\""
+          "value": "\"sha256-dd511d9444658dad75252f7bd6ffb448a6d8cdd4967d35d37503e92b96515020\""
         },
         {
           "key": "Cache-Control",
@@ -12592,7 +12915,7 @@
         },
         {
           "key": "ETag",
-          "value": "\"sha256-13f4945a11f9206ad1a75b1050d5f7b219522bd852dc697a946ca0a569447dd9\""
+          "value": "\"sha256-c83d0c574afe42c35996ef907e8f06d4138e33e45bcafe4595c8464332c4e446\""
         },
         {
           "key": "Cache-Control",

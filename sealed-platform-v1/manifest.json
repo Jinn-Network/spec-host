@@ -2,14 +2,14 @@
   "version": 1,
   "generatedFrom": {
     "repository": "Jinn-Network/mono",
-    "commit": "9e8a1ac7bdba1ac5c87cea9f0d54c7eddeda1591"
+    "commit": "275b4bb8474927b8aeaa9dcf44dffeadae49dbb3"
   },
   "catalog": {
     "path": "architecture/platform-packages.v1.json",
     "sha256": "9b48ed3f896777e085ed5f560fad7fe24eea98022a8e8ffbe4b1ce8a2286b91e"
   },
   "releaseGroup": "sealed-platform-v1",
-  "lane": "stable",
+  "lane": "canary",
   "packages": [
     "@jinn-network/benchmarking-protocol",
     "@jinn-network/benchmarking-records",
@@ -2878,19 +2878,19 @@
     },
     {
       "path": "profiles/task-execution/v1",
-      "sha256": "c0ace1561854799afe85e6fc6f1588f1fd0b1a5f3c019c8f457b4238d474fe49",
+      "sha256": "ec4eb17d94b2bfa2aa7d65b2913b3ded3760e948c2ee12a221540f91a954a20c",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/task-execution-protocol"
     },
     {
       "path": "profiles/task-profile/v1",
-      "sha256": "edd241b5a6d1188a68a5a10fe97611f1c2fb2433523010a154c055f39b2c8c21",
+      "sha256": "dd511d9444658dad75252f7bd6ffb448a6d8cdd4967d35d37503e92b96515020",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/task-execution-profiles"
     },
     {
       "path": "profiles/trace-vocabulary/v1",
-      "sha256": "13f4945a11f9206ad1a75b1050d5f7b219522bd852dc697a946ca0a569447dd9",
+      "sha256": "c83d0c574afe42c35996ef907e8f06d4138e33e45bcafe4595c8464332c4e446",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/evidence-trace"
     },
