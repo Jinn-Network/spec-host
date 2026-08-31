@@ -1,74 +1,74 @@
 # spec.jinn.network
 
 The public spec surface of the Jinn protocol: every schema, profile, protocol
-and facts document that a record cites by identifier. This repository is
-deployed as a static site at `https://spec.jinn.network`, with no build step.
+and facts document that a record cites by identifier. Deployed as a static
+site at `https://spec.jinn.network`, with no build step.
 
-**Nothing here is written by hand.** Every file is byte-copied from a
-CI-attested, signed artifact of `Jinn-Network/mono`, assembled by the
-repository's own `build-profile-host-bundle.mjs`. Edits belong in the owning
-package in the mono; a change here would be overwritten and would break the
-digests and signatures that verification depends on.
+**Nothing here is written by hand.** Every file is generated output from
+`Jinn-Network/mono`, assembled by that repository's own
+`build-profile-host-bundle.mjs`. Edits here would be overwritten and would
+break the digests verification depends on. The mono is the only place the
+spec is written.
 
 ## What is served
 
 | | |
 | --- | --- |
-| Documents | 777 |
-| Built from | `Jinn-Network/mono` @ `275b4bb8474927b8aeaa9dcf44dffeadae49dbb3` |
-| Release groups | `sealed-platform-v1` (498), `implementations-v1` (279) |
-| Signed | yes — each group's `manifest.dsse.json`, key id `jinn-profile-manifest-2026-08` |
+| Documents | 797 |
+| Built from | `Jinn-Network/mono` @ `dc7ec72c7` |
+| Release groups | `sealed-platform-v1` (518), `implementations-v1` (279) |
+| Signed | not yet — see below |
 
-Each release group's inventory is served at `<group>/manifest.json`, with a
-DSSE signature sidecar beside it, verifiable against the public key published
-in the mono (digest-pinned in the repository variables). Nothing is served at
-the origin root: the per-group namespace is what lets two groups share one
-host (Jinn-Network/mono#3215), and the live-host gate probes that a root
-`manifest.json` stays 404.
+Each release group's inventory is served at `<group>/manifest.json`. Nothing
+is served at the origin root: per-group namespacing is what lets two groups
+share one host (Jinn-Network/mono#3215), and the live-host gate requires a
+root `manifest.json` to stay 404.
 
 `vercel.json` sets the content type, entity tag and cache lifetime for every
 document and disables URL guessing (`cleanUrls: false`, `trailingSlash:
-false`). This is load-bearing: 51 documents have no file extension. Documents
-are immutable by the identifier rules and cached as such; the group manifests
-and sidecars revalidate.
+false`). This is load-bearing: 51 documents have no file extension.
 
 There is no home page. A spec origin serves documents and 404s everything else.
 
 ## Deploying
 
-Import the repository into Vercel in the account that owns `jinn.network`,
-with **no build command** and the repository root as the output directory,
-then attach the domain `spec.jinn.network`. Subsequent pushes deploy
-automatically.
-
-Verify a deployment with an ordinary document and an extensionless one:
+Import into Vercel in the account that owns `jinn.network`, with **no build
+command** and the repository root as the output directory, then attach the
+domain. Subsequent pushes deploy automatically.
 
     curl -sI https://spec.jinn.network/schemas/delivery.schema.json
     curl -sI https://spec.jinn.network/task-profiles/prediction-forecast/1.0
 
-Both should return `HTTP/2 200` with `content-type: application/json`. Also
-confirm the root inventory stays absent — this must be a 404:
+Both: `HTTP/2 200`, `content-type: application/json`. And the root inventory
+must be absent:
 
     curl -sI https://spec.jinn.network/manifest.json
 
-## Certification
+## On signing and certification
 
-Once the domain serves this content, `stable-live-host-verification` in the
-mono (runs on every push to `next`) byte-compares the live host against the
-same-run attested artifact, verifies each group's manifest signature against
-the digest-pinned public key, and probes for host fallback behavior. Its
-first green is the precondition for reconsidering the npm stable-publishing
-hold.
+Manifests here carry no `manifest.dsse.json` sidecar, so
+`stable-live-host-verification` will not pass against this content. That is
+expected, and it is not a step someone can perform by hand.
 
-Consequence to know: the host must serve what the verifying commit built, so
-any mono change to the served spec surface requires refreshing this repository
-before the gate passes again. Regeneration: download
-`platform-verification-artifacts` from the publish run, then
+The gate compares the live host against the attested artifacts **of its own
+run**, and those artifacts expire within a day. A human refresh can therefore
+satisfy the gate only by landing inside the window between one run's build and
+its verification. Certification is only reachable when CI publishes this
+content itself — Jinn-Network/mono#3308. Until that lands, this repository is
+refreshed by hand, serves correct bytes, and stays uncertified.
+
+## Regenerating by hand (until #3308)
+
+From a checkout of the mono at the commit to publish:
+
+    node .github/scripts/build-profile-root.mjs \
+      --out <roots>/<group> --commit <sha> --release-group <group> --lane stable
+
+for each stack-published group, then
 
     node .github/scripts/build-profile-host-bundle.mjs \
-      --root <artifacts>/sealed-platform-v1/profile-root \
-      --root <artifacts>/implementations-v1/profile-root \
+      --root <roots>/sealed-platform-v1 \
+      --root <roots>/implementations-v1 \
       --out <fresh-dir>
 
-and replace this repository's contents with the result. CI-owned refresh is
-the intended end state.
+and replace this repository's contents with the result.

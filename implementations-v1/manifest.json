@@ -2,14 +2,14 @@
   "version": 1,
   "generatedFrom": {
     "repository": "Jinn-Network/mono",
-    "commit": "275b4bb8474927b8aeaa9dcf44dffeadae49dbb3"
+    "commit": "dc7ec72c77ed6d0d2f833bc40e561fa230c3be10"
   },
   "catalog": {
     "path": "architecture/platform-packages.v1.json",
-    "sha256": "9b48ed3f896777e085ed5f560fad7fe24eea98022a8e8ffbe4b1ce8a2286b91e"
+    "sha256": "f98037c34e1e9556f8869b66ec84592b1995fdb901244153a8ba9755d2b0f5cf"
   },
   "releaseGroup": "implementations-v1",
-  "lane": "canary",
+  "lane": "stable",
   "packages": [
     "@jinn-network/benchmarking-aggregate",
     "@jinn-network/benchmarking-evaluation",

@@ -2,14 +2,14 @@
   "version": 1,
   "generatedFrom": {
     "repository": "Jinn-Network/mono",
-    "commit": "275b4bb8474927b8aeaa9dcf44dffeadae49dbb3"
+    "commit": "dc7ec72c77ed6d0d2f833bc40e561fa230c3be10"
   },
   "catalog": {
     "path": "architecture/platform-packages.v1.json",
-    "sha256": "9b48ed3f896777e085ed5f560fad7fe24eea98022a8e8ffbe4b1ce8a2286b91e"
+    "sha256": "f98037c34e1e9556f8869b66ec84592b1995fdb901244153a8ba9755d2b0f5cf"
   },
   "releaseGroup": "sealed-platform-v1",
-  "lane": "canary",
+  "lane": "stable",
   "packages": [
     "@jinn-network/benchmarking-protocol",
     "@jinn-network/benchmarking-records",
@@ -18,6 +18,7 @@
     "@jinn-network/record-discovery-testing",
     "@jinn-network/chain-environment-record",
     "@jinn-network/environment-record",
+    "@jinn-network/evidence-offer",
     "@jinn-network/evidence-protocol",
     "@jinn-network/evidence-trace",
     "@jinn-network/task-execution-profiles",
@@ -328,7 +329,7 @@
     },
     {
       "path": "@jinn-network/benchmarking-testing/fixtures/manifest.sha256.json",
-      "sha256": "4a881a929880742c777204df13a4f10a55b3f8327545a0b0d8c5d3fa211e918e",
+      "sha256": "6a0f93ec336e5a9f09edcafd3f195b2aeecac21c8e00871d8e29016710839847",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/benchmarking-testing"
     },
@@ -383,6 +384,12 @@
     {
       "path": "@jinn-network/benchmarking-testing/fixtures/methods/method-specs.json",
       "sha256": "78903ad241416a0b59f636c6c8077d219bb7e0cd0d8bc9dda4aa18f317bafe1a",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/benchmarking-testing"
+    },
+    {
+      "path": "@jinn-network/benchmarking-testing/fixtures/methods/noninferiority-cluster-bca-repo-keys.json",
+      "sha256": "0debd82dab2a0894d52d6582d10892217ee8430b79f083ec298bcd139b19f636",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/benchmarking-testing"
     },
@@ -871,6 +878,120 @@
       "sha256": "61d30698390a43cd80fe19e1c7fb4145e765dcf624a760e59647869d0c9490f7",
       "mediaType": "application/json",
       "sourcePackage": "@jinn-network/environment-record"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/manifest.sha256.json",
+      "sha256": "2e0279c7b62688aece44d493ccef4f50ce4190bcdb5249d42dffa067b04f4249",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/free.document.json",
+      "sha256": "d4d51a2a6beb46470da070f1f5ab23086406ad210fbe9d9fc9e70cb96d4c0715",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/free.json",
+      "sha256": "58b6c08203dbe40f5eb2545ddc05528ab2e81d2a849f71718fe5884cf3ce542f",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-bare-extension-key.json",
+      "sha256": "5c57e776228f28d22a160345caf094a30f2f32e979ba39b70320e4545aa4f609",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-bare-hex-subject.json",
+      "sha256": "87a851ed49af369556ff2f42e388dbf5062c30dce469ce7e92cf5429ec511bba",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-duplicate-rail.json",
+      "sha256": "3206536cab4034db7bd970937ef6ec4a378b8027c7dd340ab513617210dc3465",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-leading-zero-amount.json",
+      "sha256": "edd182056a50d48dc04540eebfdee433950fb2d110c61226d695d121f607ff72",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-missing-rails.json",
+      "sha256": "98b809361155eecc760176c347a1daaaab76c5e15e010044f6917848b6dce3dc",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-rail-spelled-twice.json",
+      "sha256": "64a9ffc0d5340b1358af5e11d461fb8bf3ec0f7b32feae4a1c64ffc28bfd1d5c",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-relative-gate-uri.json",
+      "sha256": "1325ab6495b20f2bc3d5e963ffd224a6c6d6c40cdcd9889224336b66592f108f",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-relative-rail-identifier.json",
+      "sha256": "09a0f1d15dee4defb9d8e9bffb84ea3d02dc5869b5d5beaa417b70e078930358",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-signed-amount.json",
+      "sha256": "fadc33bb215c3e1e59b97155d936c9cdaeeec1553f03e312c5b9f81cb04e81c9",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-unnormalized-rail-identifier.json",
+      "sha256": "bf21caee43d693a25877171580a0e764192d40a0ac495a377f505e71e7046d73",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-unsorted-rails.json",
+      "sha256": "eb23f9c3981a9ab894ec35965157cd8d0d91c17a2a8405fba7a11bf0270bd054",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/invalid-zero-amount.json",
+      "sha256": "b7428a300b8ca2ca8634c6dff70681d8dea563a416e1b2ae00b01565d1d41b98",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/priced.document.json",
+      "sha256": "8636395c5a4c31b68215668b266c26a48c949556d45da67d145d90d9eee659ac",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/priced.json",
+      "sha256": "62b49fb4debfd4ffdb6416a2c8999bcb4aaf3ff2665b3feddcb3db017813bf1b",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/superseding.document.json",
+      "sha256": "1e5c327a6f59b39c960b039cf7de027ead39dc8cd18ef6a0d39cc58d1d2478a9",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
+    },
+    {
+      "path": "@jinn-network/evidence-offer/fixtures/offer/superseding.json",
+      "sha256": "3e1a576ec1abeeafa201ae86828bb2e1e5a150c379d68d686867cb8a2f49264f",
+      "mediaType": "application/json",
+      "sourcePackage": "@jinn-network/evidence-offer"
     },
     {
       "path": "@jinn-network/evidence-protocol/fixtures/autopilot-issue-1697/README.md",
